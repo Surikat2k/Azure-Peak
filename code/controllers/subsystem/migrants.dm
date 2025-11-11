@@ -121,7 +121,7 @@ SUBSYSTEM_DEF(migrants)
 
 		/// determine max triumph for this wave among candidates
 		var/max_triumph = -1
-		for var/client/candidate as anything in candidates)
+		for(var/client/candidate as anything in candidates)
 			var/val = get_triumph_selection_bonus(candidate, current_wave)
 			if(val > max_triumph)
 				max_triumph = val
